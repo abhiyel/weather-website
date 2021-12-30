@@ -37,11 +37,6 @@ header a {
   text-decoration: none;
 }
 
-.portrait {
-  width: 250px;
-  border: 1px solid black;
-}
-
 input {
   border: 1px solid #cccccc;
   padding: 8px;

@@ -28,7 +28,7 @@ app.get("", (req, res) => {
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "About Me",
+    title: "About",
     author: "Abhishek Yelne",
   });
 });
@@ -72,18 +72,7 @@ app.get("/weather", (req, res) => {
     }
   );
 });
-app.get("/products", (req, res) => {
-  if (!req.query.search) {
-    return res.send({
-      error: "You must provide a search term",
-    });
-  }
 
-  console.log(req.query.search);
-  res.send({
-    products: [],
-  });
-});
 app.get("*", (req, res) => {
   res.render("error", {
     title: "Error",
